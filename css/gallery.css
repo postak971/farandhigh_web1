@@ -1,0 +1,122 @@
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  
+  img {
+    vertical-align: middle;
+  
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+
+    position: relative;
+    top: 100px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 30px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    position: absolute;
+    text-align: center;
+    padding: 5px 16px;
+    color: rgb(248, 244, 244);
+    text-shadow: 1px 1px black;
+    font-size: 25px;
+    
+  }
+  .caption{
+      padding-top: 10px;
+  }
+  .row{
+      padding-top: 102px;
+  }
+  .row img:not(:last-of-type){   
+    border-right: 1px solid white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+    
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+   
+  }
+  .row .column:not(:last-of-type){
+    border-right: 2px solid white;
+  }
+  
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .smoothRadius{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }

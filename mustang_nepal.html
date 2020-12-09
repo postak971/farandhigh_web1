@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/itinerary.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Mustang, Nepal: A Kingdom In The Sky</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav_container">
+            <nav class="topmost_nav_container">
+                <ul class="topmost_nav_left">
+                    <li><a href="request_brochure.html">Request Brochure</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news_blogs.html">News & Blogs</a></li>
+                </ul>
+
+                <ul class="topmost_nav_right">
+                    <li>1 866 123 4567</li>
+                    <li>Toll free from USA & Canada</li>
+                </ul>
+            </nav>
+            <nav class="main_nav_container">
+                <div class="main_nav_left">
+                    <img src="images/logo.png" alt="Far & High Adventures">
+                </div>
+                <div class="main_nav_right" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+
+                    <a href="deals.html">Deals</a>
+                    <div class="dropdown">
+                        <a class="dropbtn">Tours
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="tours.html">Culture</a>
+                            <a href="trekking_trips.html">Trekking</a>
+                            <a href="special_interest.html">Special Interest</a>
+                        </div>
+
+                    </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+                        onclick="myFunction()">&#9776;</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main_container">
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+            <!--Next and previous buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="/images/mustang/lomanthang_wide.jpg" style="width: 100%;" alt="Lo Manthang, Nepal"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="/images/mustang/mountain_wide.jpg" style="width: 100%;" alt=" Mustang Himalaya, Nepal"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="/images/mustang/mustang_cave_retreat_wide.jpg" style="width: 100%;"
+                    alt=" A Cave Retreat in Mustang" class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="/images/mustang/mustang_children_wide.jpg" style="width: 100%;" alt=" Children of Mustang"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="/images/mustang/mustang_chorten_wide.jpg" style="width: 100%;" alt=" A Chorten in Mustang"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="/images/mustang/mustang_horse_wide.jpg" style="width: 100%;" alt=" Horse Riding in Mustang"
+                    class="smoothRadius">
+            </div>
+
+        </div>
+
+        <!--Image caption if any-->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!--Thumbnail images-->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="/images/mustang/lomanthang.jpg" style="width:100%;"
+                    onclick=" currentSlide(1)" alt="Lo Manthang, Nepal">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/mustang/mountain.jpg" style="width:100%;"
+                    onclick=" currentSlide(2)" alt="Mustang Himalaya, Nepal">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/mustang/mustang_cave_retreat.jpg" style="width:100%;"
+                    onclick=" currentSlide(3)" alt="A Cave Retreat in Mustang, Nepal">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/mustang/mustang_children.jpg" style="width:100%;"
+                    onclick=" currentSlide(4)" alt="Happy Children of Mustang, Nepal">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/mustang/mustang_chorten.jpg" style="width:100%;"
+                    onclick=" currentSlide(5)" alt="A Chorten in Mustang, Nepal">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/mustang/mustang_horse.jpg" style="width:100%;"
+                    onclick=" currentSlide(6)" alt="Horse Riding in Mustang, Nepal">
+            </div>
+        </div>
+        <h1>Mustang, Nepal: A Kingdom In The Sky</h1>
+        <button class="button_cad">View Price in CA$</button>
+        <article class="itinerary_flex">
+            <section>
+                <h3>Trip Overview</h3>
+                <div class="overview_flex">
+                    <p>On this trip, we take you to Mustang, a lost Tibetan Kingdom in the Himalaya.
+                        Situated high in the Tibetan plateau and surrounded by the Himalayan mountains,
+                        Mustang is truly a kingdom in the sky. Mustang offers rugged terrain, magnificent landscapes,
+                        barren ridges,
+                        deep canyons, eroded cliffs, and moraine valleys. Tibetan style villages, ancient monasteries,
+                        and chortens intersperse
+                        throughout the region, and we can experience the authentic Buddhist religion and culture in this
+                        forbidden land.
+                    </p>
+                    <div>
+                        <p><strong>Difficulty Level:</strong> 3, high altitude, 4WD on rough road and some walking</p>
+                        <p><strong>Rating Popular:</strong> Discovery</p>
+                        <p><strong>Highest Altitude:</strong> 12,467 ft ft.</p>
+                        <p><strong>Trip starts at:</strong> Kathmandu, Nepal</p>
+                        <p><strong>Trip ends at:</strong> Kathmandu, Nepal</p>
+                        <p><strong>Accommodations:</strong> Hotels and guesthouses</p>
+                        <p><strong>Places visited:</strong> Kathmandu Pokhara Jomsom Kagbeni Ghami Lo Manthang Chhusang
+                        </p>
+                    </div>
+                    <div>
+                        <h5>Trip Cost ( Based on minimum 5-participants)</h5>
+                        <h5>Trip Cost ( Based on minimum 5-participants)</h5>
+                            <p><strong>Jul, Aug & Sep:</strong></hp>
+                            <p class="price">US$ <span class="cost">2499</span> Per Person</p>
+                            <p>Private Room Supplement:</hp>
+                            <p class="price">US$ <span class="cost">380</span> Per Person</p>
+                            <p>(Mandatory for a solo traveler)</p>
+                            <p><strong>Oct, Nov, Dec, Jan & Feb:</strong></hp>
+                            <p class="price">US$ <span class="cost">2299</span> Per Person</p>
+                            <p>Private Room Supplement:</hp>
+                            <p class="price">US$ <span class="cost">380</span> Per Person</p>
+                            <p>(Mandatory for a solo traveler)</p>
+                            <p><strong>Mar, April, May & June:</strong></hp>
+                            <p class="price">US$ <span class="cost">2399</span> Per Person</p>
+                            <p>Private Room Supplement:</hp>
+                            <p class="price">US$ <span class="cost">390</span> Per Person</p>
+                            <p>(Mandatory for a solo traveler)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Itineray</h3>
+                <h4>Day 01~ Arrive in Kathmandu, Nepal</h4>
+
+                <p>You arrive in Kathmandu on your own. You can apply for Nepal visa on arrival! Bring one passport-type
+                    picture
+                    and cash US$ 30 to pay in visa fee.
+                    After completing immigration and customs formalities, meet your guide at the arrival gate and
+                    transfer to the hotel.</p>
+
+                <h4>Day 02~ A free day in Kathmandu for optional sightseeing</h4>
+                <p>You have a free day in Kathmandu while we obtain your necessary travel permits to Mustang (Mustang
+                    Special Area Permit
+                    and Annapurna Conservation Area). The trip cost includes permit fees. You can take rest or book an
+                    optional sightseeing tour.
+                    A car with a driver and an English speaking guide costs $ 70 for a full day sightseeing (7 or 8
+                    hours) if you wish to book. </p>
+
+                <h4>Day 03~ Travel by road to Pokhara</h4>
+                <p>(125 miles, 6 or 7 hours).
+
+                    Note: If you wish, you can take a 25 minutes long flight for $ 135 (including airport transfers)
+
+                    Together with your guide, travel to Pokhara by a comfortable tourist coach. It's a scenic
+                    journey on the mountainous road that allows you to see the rural countryside of Nepal. Along
+                    the way, enjoy the greeneries, terraced farms, quaint villages, roadside settlements, and occasional
+                    view of snow-capped mountains!
+
+                    Upon arrival in Pokhara, transfer to the hotel for check-in. Balance of the day is for rest as we
+                    prepare for the big adventure ahead.</p>
+
+                <h4>Day 04~ By flight to Jomsom</h4>
+                <i> (20 minutes long flight. Jomsom elevation (Elevation 9,000 ft.)</i>
+
+                <p>Early morning breakfast and transfer to the airport in time for the flight to Jomsom.
+                    If the weather goes well, the flight takes off in time, and we arrive in Jomsom around 8 a.m.
+                </p>
+                <p><b>Hike to Thini Gaon, Dhumba Lake and Marpha Village ( 8, 692 ft.) </b></p>
+                <p>
+                    We start our trek and arrive in a small picturesque village of Thini in about 30 minutes.
+                    Thini is the oldest village in the valley and features an old Buddhist Gompa (previously a Bon
+                    monastery).
+                    Now, we follow the trail that drops down and crosses the Lungpuhyun Khola River and then ascends the
+                    other side.
+                    We pass by the hilltop ruins of Gharab Dzong fortress and beyond is the pretty, prayer flag
+                    festooned sacred Dhumba
+                    Lake at 9, 282ft. Hike up the ridge above the lake to the Katsapterenga Gompa for a 360-degree view
+                    of Nilgiri peak,
+                    Tilicho Pass, Syang village and Thini and Jomsom below you.
+                </p>
+                <p>We continue walking through the picturesque villages with interspersed monasteries, tea-shops, cross
+                    the Kali Gandaki
+                    River and arrive at the beautiful village of Marpha. Marpha is a lovely village with paved streets
+                    and well- kept,
+                    whitewashed houses, surrounded by fertile fields and orchards. We spend the balance of the day
+                    exploring the village.
+                    Be sure to try some locally grown apples if you are here in the autumn and maybe the apple brandy!
+                    The monastery of the village is also worth a visit. </p>
+                <p><b>Roadtrip option:</b> The flight from Pokhara to Jomsom is very much weather-bound. There is the
+                    strong wind in Jomsom
+                    that starts to blow mid-morning and makes impossible for the planes to land. So all the planes have
+                    to land and
+                    take off before the wind begins! If the flight gets canceled, then we have no other option than to
+                    take a road trip. And we make in two days of a reasonable amount of drive; five or six hours a day.
+                    And we can
+                    still catch up the itinerary as planned. </p>
+
+                <h4>Day 05~ By 4WD to Muktinath and Kagbeni</h4>
+                <p><i>Muktinath ( Elevation 12, 464 ft) Kagbeni ( Elevation 9, 512 ft)</i></p>
+                <p>After breakfast, we meet our driver and ride back to the Pokhara-Jomsom highway and continue to
+                    Kagbeni and then to Muktinath
+                    ( Total drive 25 miles).
+                </p>
+                <p>On the way to Muktinath, we stop in the village of Jharkot and visit its ruined palace, a monastery,
+                    and Tibetan healing center.
+                    Finally, we arrive at the temple of Muktinath-a Hindu temple dedicated to
+                    Lord Bishnu but equally revered by Buddhist as well. We enjoy the incredible views of Dhaulagiri,
+                    Nilgiri, and Tukuche Peak.</p>
+                <p>In the afternoon, we retrace our journey back to Kagbeni. Set beside the Kali Gandaki River, Kagbeni
+                    is the gateway to Upper Mustang. We check into our guesthouse and the balance of the day is for
+                    exploration of this picturesque Tibetan village. We browse through narrow walkways and passageways
+                    that squeeze beneath buildings and pass by the Chortens and prayer wheels
+                    here and there. You can spend some time at the village's monastery that now primarily
+                    serves as a primary school. But you can still observe the Tibetan
+                    artifacts and worship ceremonies, called 'puja.' </p>
+
+
+                <h4>Day 06~ By 4WD to Ghami</h4>
+                <p><i>Ghami Villag (Elevation: 11, 448 ft)</i></p>
+                <p>Today, we enter the restricted area of Upper Mustang.
+                    First, we have our permit checked at the entry post,
+                    and then we begin our road adventures. The jeep track
+                    skirts the side of the Kali Gandaki River Valley.
+                    Along the way, we stop and explore the small
+                    villages and see the carefully tended terraced fields.
+                    It's amazing to see how there are fields flooded in such
+                    landscape that is otherwise dry and barren wilderness.</p>
+
+
+                <p>At Chusang there is a river tributary to cross and shortly after that
+                    the Kali Gandaki River bed itself. Now, the road climbs and crosses
+                    some high passes before it descends to Ghami Village where we
+                    overnight today. The Syngboche Pass, which is at the elevation of
+                    13, 776 ft, offers a fantastic view of the vast Trans Himalayan
+                    region. </p>
+                <p>Today, we travel 20 miles in six hours!</p>
+                <h4>Day 07~ Lo Manthang- The Capital of Mustang</h4>
+                <p><i>Altitude 12,595 ft</i></p>
+                <p>Today, we finally make to the capital city Lo-Manthang of the lost
+                    Tibetan Kingdom of Mustang. We cruise through the vast
+                    mountain-desert, cross quite a few high passes and enjoy the
+                    magnificent view of Nilgiri, Tilicho, Annapurna and other peaks.
+                    Along the way, we stop to visit the Ghar Gompa-a significant
+                    monastery of Mustang and Charang
+                    Village-the second largest settlement of Mustang, after Lo
+                    Manthang.</p>
+                <p>Once in Lo Manthang, we check into our accommodation and soon
+                    set out to explore the local highlights. Lo Manthang was the
+                    walled capital of the kingdom of Lo-founded in the 14th century!
+                    The kingdom came under the Shah rulers of Nepal in the
+                    18th century, but the hereditary rulers were allowed to continue!</p>
+                <p>Today, we visit the Jampa Gompa -the oldest monastery built in the
+                    early 15th century, Thubchen Gompa- a vast, red assembly hall and
+                    gompa built in the late 15th century. And also Chodey Gompa-which
+                    is now the leading city gompa and the monastic museum. Caravans of
+                    domesticated yaks and sheep are frequent sights. We will also visit
+                    the king's palace and observe other local activities in the town. </p>
+                <p>Today, we drive about 11 miles in three hours!</p>
+                <h4>Day 08~ Explore Lo Mathang and the area around.</h4>
+                <p>
+                    Today, we take an excursion of the attractions around Lo Manthang.
+                    We visit the Namgyal Gompa, the sky caves of Chhosar and the 3,000-
+                    year-old Shija Jhong Cave. There are several other high cliff
+                    caves which were used for burial, meditation and also as a dwelling.
+                </p>
+                <h4>Day 09~ Return to Chhusang</h4>
+                <p>While it's possible to drive back to Jomsom on a long day,
+                    it may be exhaustive and so
+                    we overnight in Chusang village which should take
+                    about six hours. </p>
+                <h4>Day 10~ Back to Jomsom</h4>
+
+                <p>While it's possible to drive back to Jomsom on a long day,
+                    it may be exhaust
+                    so we overnight in Chusang village which should take about six hours. </p>
+                <h4>Day 11-12~ By flight to Pokhara and an additional day for optional sightseeing</h4>
+                <p>Luckily, the plane from Pokhara touches down at the
+                    Jomsom airport this morning, and we fly to Pokhara today.</p>
+                <p><b>Road trip alternative:</b> If the flight gets canceled, we take a long day road trip to Pokhara.
+                    While it's possible to make it in a single day to Pokhara,
+                    we might break the journey in Tatopani or Beni tonight. </p>
+                <p> If we are lucky with the flight and we arrive in Pokhara as planned, we
+                    have an extra day in Pokhara for rest or optional sightseeing.
+                    Pokhara is a relaxed city and you can explore the local attractions on your own
+                    or hire a car with driver and an English speaking
+                    guide costs US$ 70.</p>
+                <h4>Day 13~ Travel back to Kathmandu</h4>
+                <p>After breakfast, we take the tourist coach back to Kathmandu.
+                    If you wish, you can buy
+                    a plane ticket for $ 130, including airport transfers. </p>
+                <h4>Day 14 ~Depart Kathmandu</h4>
+                <p>After breakfast, service ends. If you are departing Kathmandu today, you will
+                    be dropped off at the airport.
+                </p>
+
+                <h3>Trip Info</h3>
+                <h4>Trip Includes</h4>
+                <ul class="list_style_none">
+                    <li>Arrival and departure transfers in Kathmandu by a Sedan car or van</li>
+                    <li>Local three-star hotels in Kathmandu and Pokhara, three nights each place</li>
+                    <li>Guesthouse accommodation with a shared toilet in the Mustang region.</li>
+                    <li>Breakfast only in Kathmandu and Pokhara and full board in the Mustang region.</li>
+                    <li>Mustang Area Special Permit ($500 per person)</li>
+                    <li>An English speaking certified guide, including his accident insurance.</li>
+                    <li>Return airfare from Pokhara to Jomsom. If the flight gets canceled, the
+                        cost of the flight will be used to rent the jeep for the road trip.</li>
+                    <li>Sleeping bag and a duffel bag for use during the trip.</li>
+                </ul>
+                <h4>Trip Does Not Include</h4>
+                <ul class="list_style_none">
+                    <li>International airfare. We can book it on your request and bill
+                        you separately.</li>
+                    <li>Nepal visa fee&nbsp;</li>
+                    <li>Meals while in Kathmandu and Pokhara</li>
+                    <li>Drinks, tipping, laundry, phone, and other personal
+                        expenses.</li>
+                    <li>Additional costs or losses due to nature and
+                        unforeseen events.</li>
+                    <li>Travel insurance (we highly recommend travel
+                        insurance including emergency evacuation by
+                        helicopter and medical transportation</li>
+                    <li>Personal gears</li>
+                </ul>
+                <h4>Passport and visa</h4>
+                <p>Remaining validity of your passport must be a minimum of six months beyond your return date. Make sure you have two blank 
+                    visa pages for each country you travel on this trip.&nbsp;</p>
+                    <p>You can obtain a Nepal visa upon arrival. Visa fee costs 
+                        US$ 30 for 14-days and $ 45 for 30-days and one picture. We will email you a visa form in advance that you can complete 
+                        and bring along to save time at Kathmandu airport.&nbsp;</p>
+                <p>Mustang region also requires special restricted area permit (fee $ 500 per person) and Annapurna Area Conservation fee. 
+                    There are all the costs included.</p>
+                <h4>Accommodation & meals</h4>
+                <p>Accommodation in Kathmandu and Pokhara will be in mid-range, comfortable three-star hotels. 
+                    You will have a private bathroom with 24-hours running hot and cold water. Amenities include electric kettle with tea and coffee pouches, 
+                    wireless or cabled internet, television, necessary toiletry supplies, etc.</p>
+                    <p>Once we leave the cities, accommodation will be in 
+                        trekking lodges or guesthouses which are popularly known as 'tea-houses.' A tea-house is a mom-and-pop establishment where they have a 
+                        few rooms for the guests. Rooms are simple with two or three beds, provided with futon or foam mattresses, bed cover, pillows, and a quilt 
+                        or blanket. The bed sheets, pillowcases, quilt cases, linens, etc. are generally clean. But still may show stains as all the linens are hand-washed 
+                        with cold water and weather is extreme in the Himalaya. Some travelers prefer to bring sleeping bags on their own. If you need it, we can also provide
+                         you one for use in the trip. You may also consider bringing linen sprays to use on the bedding if you are sensitive.</p>
+                         <p>Each guesthouse has two or three toilets and a bathing room which you share with the family and other guests in the house. 
+                             They are generally clean. While some of them have a western-style commode, many are local squat-style, and they may not have the flush.
+                              After use, you need to pour water in to clean it. You need to bring toilet paper for your use.</p>
+                              <p>Some newer guest houses have a shower, 
+                    but many traditional guesthouses do not have one. They provide you a bucket of hot water and a jug for bathing and charge a nominal fee.</p>
+                    <p>The trip features three meals a day when you are in the Mustang region. The tea-house menu lists a range of food such as noodles, spaghetti, 
+                        rice dishes, potatoes, eggs, bread, soups, seasonable vegetable items and some sweet dishes such as apple pies, pancakes, puddings, custards, etc. 
+                        They also attempt to make pizzas and bakeries! The most popular food, readily available is 'dal that' which is a platter of steamed rice, curried vegetable, 
+                        lentil soup, and chutney. Momo-a steamed dumpling stuffed with ground meat, vegetable and herbs are also special! You won't find many meat dishes in the mountain, 
+                        and they are pricy even found. So, bring sufficient protein supplement. On the beverage side, you can find hot tea, instant coffee, hot lemon, hot chocolates, 
+                        sodas, beer, and local liquors, etc.&nbsp;</p><p>You will eat breakfast and dinner, usually at your guesthouse and lunch in a roadside inn along the way. 
+                            If you are a couple or a family or a small group, your guide may hand you in each a la carte menu, and you can choose your food. Do not be surprised 
+                            if the item listed in the menu is not available! During the busy season and if you are a group, then your guide orders the same food for everyone
+                             unless you have a special dietary requirement. This is to save time and the fact that the owner can not handle many orders at a time. Usually, your 
+                             meal course includes an appetizer, a main dish, and a dessert item, followed by a cup of tea or coffee. You need to pay out of pocket if you order 
+                             a soda, beer, or any alcoholic beverages! (Consuming an alcoholic drink at a high altitude is not a good idea!). There are no western trained chefs. 
+                             However, they do their best. Do not be surprised 
+                        if the food that has a western sounding name tastes different than you expected!&nbsp;</p>
+
+                <h4>Roads and Transportation</h4>
+                <p>The drive from Kathmandu to Pokhara is smooth with exception to some potholes and damages in the landslide-prone areas. Currently, some portion of the way is on the process of widening.</p><p>The Mustang region, which is a mountain desert has no proper roads. We travel on the gravel roads bulldozed on the cliff-side and tracks in the flat areas. Quite a few times we cross the streams without bridges! So, it's going to be a bumpy drive and also could be dusty. But we care about is the magnificent views of the landscape, mountains, sceneries, quaint villages and experiencing the Buddhist culture! This adventure is certainly not for individuals with back-ache issues.</p><p>We are trying to use flight for transportation between Pokhara and Jomsom, but we do not have luck with the weather sometimes. Jomsom experiences very high wind that starts blowing in the mid-morning, and after that, it becomes impossible for the planes to land and take off. So, the aircraft departs Pokhara between 6 a.m. and 7 a.m. In case the weather goes wrong, there will be no flight, and we have to take the road trip to Jomsom, which takes two long days of the drive. The road is smooth until Beni (five or six hours) and then it's a gravel and dirt road bulldozed on the high gorge side and it can be scary for some! The refund of the airfare covers the cost of the alternative road trip.&nbsp;</p><p>We use Japanese made 4WD Toyota Landcruiser or Indian made Mahindra Scorpio for the road trip to Mustang. These diesel engine vehicles are perfect for mountainous terrain and off-road adventures. These vehicles perform very well on the roads with sharp bends and steep ascents and descents. For the transportation between Kathmandu 
+                    and Pokhara, we use comfortable tourist class coach and a sedan car for all airport transfers in Kathmandu.</p>
+                <h4>Tour Guide</h4>
+                <p> You will be accompanied by experienced and knowledgeable English speaking Guide who you meet
+                    on arrival at Kathmandu airport. Besides guiding you on tour, your guide will also be responsible for dealing with check
+                    posts, and local bureaucracies and
+                    complete necessary paperwork. Guide and driver are different persons.</p>
+                <h4>Vaccination and Health Issues</h4>
+                <p>There are no mandatory vaccinations required for traveling to Nepal unless you have visited
+                    any yellow fever affected
+                    areas in the last six months. However, you may consider protection against rabies Hep A, Typhoid,
+                    etc. Travelers with cardiac-pulmonary
+                    issues or any other medical conditions are recommended to consult their physician. The primary
+                    health consideration in Tibet is altitude-related
+                    illness or Acute Mountain Sickness (AMS). You may experience some mild symptoms initially, such as
+                    headache, lethargy, nausea, and sleeplessness,
+                    but these should lessen within a few days.
+
+                    Although the trip doesn't expect you to be athletic, you will be glad if you are fit. So, please,
+                    start some physical exercises like jogging,
+                    swimming, cycling, hiking, etc. about several weeks before the trip.</p>
+
+                <h4>Booking and cancellation</h4>
+                <p>We request a deposit of US$300 along with a completed trip application form and passport copies. If
+                    you need us to book the airfare to Lhasa,
+                    we will give you the quote.
+                    The final payment is due 90 days before the trip date. Balance payment on credit card attracts an
+                    additional 3.5% fee.</p>
+                <h5>Cancellation fees</h5>
+                <ul class="list_style_none">
+                    <li>Ninety days prior departure: Administrative fee US$ 150 per person.</li>
+                    <li>Sixty-Eighty-nine day's prior departure: US$ 250 or 25% of the land cost whichever is higher.
+                    </li>
+                    <li>Forty-five days to Fifty-nine days prior departure: US$ 450 or 50% of the land cost whichever is
+                        higher.</li>
+                    <li>Thirty days to Forty-four days before departure: US$ 600 or 75% of the land cost whichever is
+                        higher.</li>
+                    <li>Less than Thirty days: 100%,</li>
+                </ul>
+            </section>
+        </article>
+        <article class="similar_trips_container">
+            <h3>Similar Trips</h3>
+            <div class="similar_trips">
+                <ul>
+                    <li><a href="tibet_everest.html">Tibet: Everest Base Camp Adventure, 8 days from $999</a></li>
+                    <li><a href="mustang_nepal.html">Mustang, Nepal: A Kingdom In The Sky, 14 days from $249</a></li>
+                    <li><a href="bhutan_mountains.html">Bhutan: Mountains, Monasteries & Wildlife, 17 Days from
+                            $3499</a></li>
+                    <li><a href="india_tigers_tajmahal.html">India: Taj Mahal, Forts and Tigers, 12 Days from $1599</a>
+                    </li>
+                    <li><a href="mongolia_southgobi.html"> Mongolia: South Gobi and Naadam Festial, 10 Days from
+                            $2999</a></li>
+                    <li><a href="myanmar_discovery.html">Myanmar: Myanmar Discovery, 12 Days from $1499</a></li>
+                    <li><a href="indochina_classic.html">Indochina Classic: Vietnam, Cambodia & Laos, 14 Days from
+                            $2499</a></li>
+                    <li><a href="quintessential_srilanka.html">Sri Lanka: Quintessential Sri Lanka, 12 Days from
+                            $1599</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <nav class="footer_nav">
+
+            <ul>
+                <li><a href="terms_conditions.html">Booking Terms & Conditions</a></li>
+                <li><a href="travel_protection.html">Travel Protection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="request_brochure.html">Request brochure </a></li>
+            </ul>
+
+        </nav>
+        <p>©Far & High Adventures 2020</p>
+    </footer>
+    <script type="text/javascript" src="/js/responsivenav.js"></script>
+    <script type="text/javascript" src="/js/gallery.js" defer></script>
+    <script type="text/javascript" src="js/currency_converter.js" async defer></script>
+
+</body>
+
+</html>

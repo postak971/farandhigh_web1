@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/itinerary.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>Far & High Contact Form</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav_container">
+            <nav class="topmost_nav_container">
+                <ul class="topmost_nav_left">
+                    <li><a href="request_brochure.html">Request Brochure</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news_blogs.html">News & Blogs</a></li>
+                </ul>                
+            
+                <ul class="topmost_nav_right">
+                    <li>1 866 123 4567</li>
+                    <li>Toll free from USA & Canada</li>
+                </ul>
+
+            </nav>
+            <nav class="main_nav_container">
+                <div class="main_nav_left">
+                    <img src="images/logo.png" alt="Far & High Adventures">
+                </div>
+                <div class="main_nav_right" id="myTopnav">
+                    <a href="index.html">Home</a> 
+                    <a href="about.html">About</a>                                 
+                             
+                    <a href="deals.html">Deals</a>
+                    <div class="dropdown">
+                        <a class="dropbtn">Tours
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="tours.html">Culture</a>
+                            <a href="trekking_trips.html">Trekking</a>
+                            <a href="special_interest.html">Special Interest</a>
+                        </div>
+                        
+                    </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+                        onclick="myFunction()">&#9776;</a>
+                </div>
+            </nav>
+        </div>
+        <div class="banner_container">
+
+            <h2>Get outside, travel far and high!</h2>
+
+        </div>
+    </header>
+    <main class="main_container">
+        <h1>Contact Us</h1>
+
+
+        <article class="itinerary_flex">
+            <section>
+                <h3>Our Office</h3>
+                <div class="overview_flex">
+                    <p>Do you have any questions about the trip you are looking for or you just need some information,
+                        feel free to call or write us.</p>
+                    <p><em>Far & High Adventures</em><br>
+                    6603 Queen Ave S, Suite 123<br>
+                        Minneapolis, MN 55423<br><br>
+                        Tel: 612 605 4428<br>
+                        Fax: 612 807 1137<br><br>
+                        Email: sales@farandhigh.com
+                    </p>
+                </div>
+                <div>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11307.904287982765!2d-93.3095414!3d44.8831359!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x636bb1efcc1a738c!2sFar%20%26%20High%20Adventure%20Travel!5e0!3m2!1sen!2sus!4v1602955688347!5m2!1sen!2sus" 
+                    width="auto" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </div>
+            </section>
+            <section>
+                <h3>Contact form</h3>
+                <form method: get action = "https://httpbin.org/get">
+                    <label for="name">Full Name*:</label><br>
+                    <input type="text" id="name" pattern="[a-zA-Z ]+" name="name" placeholder="First Name & Last Name" required autofocus><br>
+                    <label for="wphone">Work phone:</label><br>
+                    <input type="tel" pattern="[0-9]+" id="wphone" name="wphone" placeholder="eg. 6122155284"><br>
+                    <label for="cphone">Cell phone:</label><br>
+                    <input type="tel" pattern="[0-9]+" id="cphone" name="cphone" placeholder="eg. 6122155284"><br>
+                    <label for="email">Email*:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="comment">Comment or questions:</label><br>
+                    <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea><br><br>
+                    <input type="submit" value="Submit">
+
+                </form>
+            </section>
+        </article>
+        
+    </main>
+    <footer>
+        <nav class="footer_nav">
+
+            <ul>
+                <li><a href="terms_conditions.html">Booking Terms & Conditions</a></li>
+                    <li><a href="travel_protection.html">Travel Protection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="request_brochure.html">Request brochure </a></li>
+            </ul>
+
+        </nav>
+        <p>©Far & High Adventures 2020</p>
+    </footer>
+    <script type="text/javascript" src = "/js/responsivenav.js"></script>
+</body>
+
+</html>

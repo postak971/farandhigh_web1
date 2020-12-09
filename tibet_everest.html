@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>  
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/itinerary.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Tibet Everest Base Camp Tour</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav_container">
+            <nav class="topmost_nav_container">
+                <ul class="topmost_nav_left">
+                    <li><a href="request_brochure.html">Request Brochure</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news_blogs.html">News & Blogs</a></li>
+                </ul>
+
+                <ul class="topmost_nav_right">
+                    <li>1 866 123 4567</li>
+                    <li>Toll free from USA & Canada</li>
+                </ul>
+            </nav>
+            <nav class="main_nav_container">
+                <div class="main_nav_left">
+                    <img src="images/logo.png" alt="Far & High Adventures">
+                </div>
+                <div class="main_nav_right" id="myTopnav">
+                    <a href="index.html">Home</a> 
+                    <a href="about.html">About</a>                                 
+                             
+                    <a href="deals.html">Deals</a>
+                    <div class="dropdown">
+                        <a class="dropbtn">Tours
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="tours.html">Culture</a>
+                            <a href="trekking_trips.html">Trekking</a>
+                            <a href="special_interest.html">Special Interest</a>
+                        </div>
+                        
+                    </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+                        onclick="myFunction()">&#9776;</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main_container">
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+            <!--Next and previous buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="/images/ebc/ebc_wide.jpg" style="width: 100%;" class = "smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="/images/ebc/monks_wide.jpg" style="width: 100%;" class = "smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="/images/ebc/potala_wide.jpg" style="width: 100%;" class = "smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="/images/ebc/tibetanwoman_wide.jpg" style="width: 100%;" class = "smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="/images/ebc/yakplowing_wide.jpg" style="width: 100%;" class = "smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="/images/ebc/yamdroklake_wide.jpg" style="width: 100%;" class = "smoothRadius">
+            </div>
+
+        </div>
+
+        <!--Image caption if any-->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!--Thumbnail images-->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="/images/ebc/ebc.jpg" style="width:100%;" onclick=" currentSlide(1)"
+                    alt="Everest Base Camp, Tibet">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/ebc/monks.jpg" style="width:100%;" onclick=" currentSlide(2)"
+                    alt="Tibetan monks">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/ebc/potala.jpg" style="width:100%;" onclick=" currentSlide(3)"
+                    alt="Potala Palace, Tibet">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/ebc/tibetanwoman.jpg" style="width:100%;"
+                    onclick=" currentSlide(4)" alt="Tibetan Women">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/ebc/yakplowing.jpg" style="width:100%;" onclick=" currentSlide(5)"
+                    alt="Yaks">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/ebc/yamdroklake.jpg" style="width:100%;"
+                    onclick=" currentSlide(6)" alt="Yamdrok Tso Lake, Tibet">
+            </div>
+        </div>
+        <h1>Tibet: Everest Base Camp</h1>
+        <button class="button_cad">View Price in CA$</button>
+        <article class="itinerary_flex">
+            <section>
+                <h3>Trip Overview</h3>
+                <div class="overview_flex">
+                    <p>No strenuous hiking or trekking! We travel by a comfortable minivan or bus up to Rongbuk
+                        Monastery, and then we switch to an eco shuttle to the base camp. Roads are all paved through
+                        the base camp! We enjoy unobstructed views of the highest mountain on earth, from top to bottom-
+                        a sight unseen on the Nepal side even after several days of strenuous trekking. We also get a
+                        close-up view of other 8000-meter high mountains such as Lhotse, Cho Oyu, Makalu, and more, all
+                        while enjoying the serene beauty of Tibetan nature.
+                    </p>
+                    <div>
+                        <p><strong>Difficulty Level:</strong> 3, high altitude, minimal walking</p>
+                        <p><strong>Rating Popular:</strong> Popular</p>
+                        <p><strong>Highest Altitude:</strong> 17,128 ft.</p>
+                        <p><strong>Trip starts at:</strong> Lhasa, Tibet</p>
+                        <p><strong>Trip ends at:</strong> Lhasa, Tibet</p>
+                        <p><strong>Accommodations:</strong> Hotels and guesthouses</p>
+                        <p><strong>Places visited:</strong> Lhasa Gyantse Rongbuk Monastery Shigatse</p>
+                    </div>
+                    <div>
+                        <h5>Trip Cost ( Based on minimum 5-participants)</h5>
+                        <p><strong>April, May & June:</strong></hp>
+                        <p class = "price">US$ <span class = "cost">1398</span> Per Person</p>
+
+                        <p><strong>Jul, Aug & Sep:</strong></hp>
+                            <p class = "price">US$ <span class = "cost">1598</span> Per Person</p>
+
+                        <p><strong>Oct, Nov & Dec:</strong></hp>
+                        <p class = "price">US$ <span class = "cost">1498</span> Per Person</p>
+
+                        <p><strong>Private Room Supplement:</strong></hp>
+                            <p class = "price">US$ <span class = "cost">350</span> Per Person</p> 
+                            <p>(Mandatory for a solo traveler)</p>                    
+
+                    
+                        
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Itineray</h3>
+                <h4>Day 01~Arrive in Lhasa, Tibet</h4>
+
+                <p>Flights to Lhasa arrive from Kathmandu (Nepal) or Chengdu (China) or other major Chinese cities with
+                    a possible stop in Chengdu. Airfare and airport transfer is not included and booked separately.
+
+                    Upon arrival, meet your guide and driver and transfer to the hotel in Lhasa City (47 miles, 1 hr.).
+                    <br>
+                    Check into the hotel and take rest for acclimatization. You are likely to experience mild symptoms
+                    of altitude sickness that
+                    include but not limited to headache, dizziness, nausea, disorientation, breathlessness, dehydration,
+                    etc. Drink plenty of water
+                    and take liquid food in meals.<br>
+                    Overnight: Dekhang Hotel</p>
+                <h4>Day 02~Potala Palace and Sera Monastery</h4>
+                <p>We visit Potala Palace in the morning and afternoon, visit Sera Monastery.
+
+                    The world-famous Potala Palace of the Dalai Lama is located on "Red Hill" to the west of old Lhasa
+                    and was the seat of the Tibetan government. With chapels, cells, schools for religious classes, and
+                    tombs of Dalai Lamas, it was a self-contained world. Kora (pilgrimage path) hike of Potala that
+                    encircles the foot of the palace is a lovely walk and an enjoyable experience.
+                    <br>
+                    After the lunch break, we will head to Sera Monastery, the last of the three principal Yellow Sect
+                    monasteries to be built in
+                    Lhasa. Sera means” Hailstone” in Tibet, and legend tells that it hailed during the foundation of
+                    this famous monastery.
+                    Sera comprise a great sutra chanting hall, a college, and 32 sections. It once housed nearly 10,000
+                    monks and is proud of its
+                    glorious history during the Ming Dynasty. At Sera, we will take the chance to watch the monks
+                    debating session.<br>
+                    Overnight: Dekhang Hotel<br />
+                    Meals : Breakfast</p>
+                <h4>Day 03~Excursion of Drak Yerpa Hermitage</h4>
+                <p>After breakfast, we are off to the Drak Yerpa Hermitage- nearly 12 miles east from the city. Many
+                    Buddhist teachers, including Guru Rinpoche and King Songtsen Gampo, meditated here, so, the cave
+                    hermitages here are among the holiest retreats in Tibet. They say there are 108 sacred cave
+                    hermitages. So, depending on your interest, we can spend a few hours here or spend the entire day
+                    exploring the holy caves where Buddhist saints and Dalai Lama meditated. While the sites have a
+                    religious significance, Drak Yerpa is also known for its natural beauty. The place is peaceful with
+                    stunning views and an experience of rural Tibet that is away from the crowds of Lhasa.
+                    <br>
+                    In the afternoon, we head back to Lhasa and visit Barkhor Street- the old Tibetan town where we will
+                    have a lunch break
+                    (lunch not provided). After lunch, we will visit the ancient Jokhang Temple. It was built by King
+                    Songtsen Gampo in the 7th
+                    century to house the image of Buddha brought to Tibet by his Nepali wife Bhrikuti as part of the
+                    dowry. After that, we will
+                    take a relaxed stroll on the pilgrimage path of Barkhor that goes around the Jokhang Temple. Barkhor
+                    area has authentic Tibetan
+                    characteristics with Tibetan shops lining up on either side of the street. We will see devout
+                    Tibetans walking and spinning the
+                    prayer wheels or counting the holy beads and uttering the sacred Buddhist mantras-'Om Mane Padme
+                    Hum!'<br>
+                    Overnight: Dekhang Hotel<br>
+                    Meals : Breakfast</p>
+                <h4>Day 04~Gyantse and Shigatse</h4>
+                <p>214 miles, 7 hours<br>
+
+                    Following breakfast, we set out on the high roads of Tibet; today, we cross two high passes the
+                    Kamba La (15,700 ft) and
+                    Karo La (16,500 ft). A pass is a sacred place for Tibetans, and each time they travel over a pass,
+                    they stop here to offer
+                    the prayer flags and wish for a safe journey! The passes also provide views over the vast Tibetan
+                    plateau and the Himalayan
+                    mountains. Often time, we can also see Tibetan people with their decorated yaks. You can ride the
+                    yak and pose for a picture
+                    for a nominal fee!
+
+                    After Kambala Pass, the road drops and follows the shores of beautiful Yamdrok Tsho Lake-one of the
+                    holiest lakes in Tibet.
+                    In about five hours or a little more, we arrive in Gyantse-a picturesque Tibetan town. In Gyantse,
+                    we visit the Kumbum Stupa
+                    -a multi-storied aggregate of Buddhist chapels. And visit adjoining Pelkore Chode Monastery, also
+                    known as Palco Monastery,
+                    which is believed to exist since the 9th century, even before the town was built. <br>
+
+                    We continue on our travel to Shigatse, the second-largest city in Tibet. The road passes through the
+                    fertile Nyanchu Valley
+                    with a vast agricultural plain. Along the way, you might see the Tibetan farmers at work.<br>
+                    Overnight: Gesar Hotel<br>
+                    Meals : Breakfast<br>
+                </p>
+                <h4>Day 05~Rongbuk Monastery and Everest Base Camp</h4>
+                <p>Another long day of driving, yet the journey is equally rewarding! The road trip involves the
+                    crossing of two high passes, the Tropu La (16,236 ft) and Gyatso La (17,122 ft). These pass cuts
+                    through several picturesque villages and will have spectacular mountain views all the time.
+                    After a lunch break in Shegar, we leave the main highway and head up north to Dza Rongbuk Monastery.
+                    The journey involves crossing over Pang La (5120m/16,794 ft) that rewards you with the views of
+                    several 8000m high mountains like Makalu, Lhotse, Cho Oyu, and Mount Everest. The road passes
+                    through several picturesque villages.
+                    <br>
+                    Upon arrival at Rongbuk, check-in the monastery guesthouse that offers simple accommodation with a
+                    shared Tibetan style pit toilet
+                    with no running water! If it's not a cloudy day, you will enjoy gorgeous views of Mount Everest.<br>
+                    Overnight: Monastery Guest House<br>
+                    Meals : Breakfast<br></p>
+                <h4>Day 06~Travel back to Shigatse</h4>
+                <p>4980m/16,600 ft., 90km/56miles, 3-4 hrs.<br>
+
+                    Enjoy the spectacular views of Mount Everest and other majestic peaks of the Himalaya! If you didn't
+                    visit the base camp, you have a chance this morning, and usually, you have better and unobstructed
+                    views in the morning.
+                    <br>
+                    After breakfast, retrace drive to the main highway and continue on a long journey to Shigatse.<br>
+                    Overnight: Shigatse Gesar Hotel<br>
+                    Meals : Breakfast<br></p>
+                <h4>Day 07~Travel back to Lhasa.</h4>
+                <p>For the return trip back to Lhasa, we take the Northern Friendship Highway that follows the
+                    Yarlungdzangbo River.
+
+                    Check-in hotel and balance of the day is free for you to take rest or take a stroll in the town.<br>
+                    Overnight: Dekhang Hotel<br>
+                    Meals : Breakfast<br></p>
+                <h4>Day 08~Departure.</h4>
+                <p>
+                    After breakfast, get transferred to the airport in time for the flight to your next destination.
+                    Meals : Breakfast </p>
+
+                <h3>Trip Info</h3>
+                <h4>Trip Includes</h4>
+                <ul class="list_style_none">
+                    <li>Tibet entry permit.</li>
+                    <li>Accommodation on double occupancy basis.</li>
+                    <li>Daily Breakfast at your hotel</li>
+                    <li>All transfers and sightseeing by a private air-conditioned van or minibus.</li>
+                    <li>Sightseeing admission fees.</li>
+                    <li>English speaking local certified Guide.</li>
+                </ul>
+                <h4>Trip Does Not Include</h4>
+                <ul class="list_style_none">
+                    <li>International and internal airfare.</li>
+                    <li>Airport Taxes.</li>
+                    <li>Chinese visa fee.</li>
+                    <li>Lunch and dinner.</li>
+                    <li>Drinks, tipping, laundry, phone, internet, and other personal expenses.</li>
+                    <li>Travel & Health Insurance.</li>
+                    <li>All extra costs due to nature or unforeseen events.</li>
+                    <li> Excess baggage charges.</li>
+                </ul>
+                <h4>Passport and visa</h4>
+                <p>The remaining validity of your passport must be a minimum of six months beyond your return date. And
+                    please make sure you have two
+                    blank visa pages for China only.You will need to apply for a Chinese visa at your nearest Chinese
+                    embassy. We will help you with
+                    the form and necessary supporting documents. Please, initiate the application process in a minimum
+                    of three months before
+                    the travel date. We need a copy of your Chinese visa forty-five days before the planned arrival date
+                    in China. We will obtain
+                    the Tibetan Entry permit for you and ship it to your hotel in the gateway city (Chengdu or Beijing).
+                    You need to present this
+                    document when you check-in for the flight to Lhasa.
+                    Your Guide will be holding all other necessary permits required for this trip.</p>
+                <h4>Accommodation & meals</h4>
+                <p>In Lhasa, we will book a mid-range tourist standard hotel in Barkhor Area. Our choices of hotels are
+                    Dhekhang, Kyichu,
+                    or Gorkha Hotel, located in the old Tibetan quarter of Lhasa. These are locally managed mid-size
+                    properties with an
+                    adequate comfort level. There are a few four stars and 5-star hotels such as 4-Points By Sheraton,
+                    Shangrila Hotel,
+                    St. Regis, etc. and we can book them for you on an additional cost. In Shigatse also, we book a
+                    local three-star hotel.
+                    Accommodation in Rongbuk is rudimentary. The toilet is a Tibetan style squat with no running water.
+                    There is no shower
+                    here. Hotels in Tibet provide limited supplies of toiletries, and so, please bring your own set.
+                    They may not also have a
+                    hairdryer, iron, and ironing boards. If the preferred hotels listed in the program are not
+                    available, we will book the
+                    next best possible property in that price category.<br>
+                    Most hotels in Lhasa and Shigatse provide with WiFi, but some hotels may charge some nominal fee for
+                    using the WiFi.
+                    Food<br>
+
+                    The trip cost includes breakfast only. The hotels serve Chinese, Tibetan, Indian, Nepali, and
+                    western-style breakfasts.
+                    The trip does not include lunch and dinner and so budget $10-12 for a meal. You may want to bring
+                    some dry fruits, chocolates,
+                    energy bars, vitamin supplements, etc.
+                </p>
+
+                <h4>Roads and Transportation</h4>
+                <p>Now the road in Tibet is in good condition! They are all paved through the basecamp. However,
+                    vehicles have to stop at
+                    Rongbuk Monastery- the last point you can get by car. Depending on the final group size, we use a
+                    minivan or coaster bus all
+                    transfers and tours. Bring a protection mask for
+                    your nose to avoid inhaling dust! The driver may or may not speak English, but he knows the Tibetan
+                    roads and will be an
+                    experienced one.</p>
+                <h4>Tour Guide</h4>
+                <p> You will be accompanied by experienced and knowledgeable English speaking Tibetan Guide who you meet
+                    on arrival at Lhasa
+                    airport. Besides guiding you on tour, your guide will also be responsible for dealing with check
+                    posts, and local bureaucracies and
+                    complete necessary paperwork. Guide and driver are different persons.</p>
+                <h4>Altitude sickness and Health Issues</h4>
+                <p>There are no mandatory vaccinations required for traveling to China and Tibet unless you have visited
+                    any yellow fever affected
+                    areas in the last six months. However, you may consider protection against rabies Hep A, Typhoid,
+                    etc. Travelers with cardiac-pulmonary
+                    issues or any other medical conditions are recommended to consult their physician. The primary
+                    health consideration in Tibet is altitude-related
+                    illness or Acute Mountain Sickness (AMS). You may experience some mild symptoms initially, such as
+                    headache, lethargy, nausea, and sleeplessness,
+                    but these should lessen within a few days.
+
+                    Although the trip doesn't expect you to be athletic, you will be glad if you are fit. So, please,
+                    start some physical exercises like jogging,
+                    swimming, cycling, hiking, etc. about several weeks before the trip.</p>
+
+                <h4>Booking and cancellation</h4>
+                <p>We request a deposit of US$300 along with a completed trip application form and passport copies. If
+                    you need us to book the airfare to Lhasa,
+                    we will give you the quote.
+                    The final payment is due 90 days before the trip date. Balance payment on credit card attracts an
+                    additional 3.5% fee.</p>
+                <h5>Cancellation fees</h5>
+                <ul class="list_style_none">
+                    <li>Ninety days prior departure: Administrative fee US$ 150 per person.</li>
+                    <li>Sixty-Eighty-nine day's prior departure: US$ 250 or 25% of the land cost whichever is higher.
+                    </li>
+                    <li>Forty-five days to Fifty-nine days prior departure: US$ 450 or 50% of the land cost whichever is
+                        higher.</li>
+                    <li>Thirty days to Forty-four days before departure: US$ 600 or 75% of the land cost whichever is
+                        higher.</li>
+                    <li>Less than Thirty days: 100%,</li>
+                </ul>
+            </section>
+        </article>
+        <article class="similar_trips_container">
+            <h3>Similar Trips</h3>
+            <div class="similar_trips">
+                <ul>
+                    <li><a href="tibet_everest.html">Tibet: Everest Base Camp Adventure, 8 days from $999</a></li>
+                    <li><a href="mustang_nepal.html">Mustang, Nepal: A Kingdom In The Sky, 14 days from $249</a></li>
+                    <li><a href="bhutan_mountains.html">Bhutan: Mountains, Monasteries & Wildlife, 17 Days from $3499</a></li>
+                    <li><a href="india_tigers_tajmahal.html">India: Taj Mahal, Forts and Tigers, 12 Days from $1599</a></li>
+                    <li><a href="mongolia_southgobi.html"> Mongolia: South Gobi and Naadam Festial, 10 Days from $2999</a></li>
+                    <li><a href="myanmar_discovery.html">Myanmar: Myanmar Discovery, 12 Days from $1499</a></li>
+                    <li><a href="indochina_classic.html">Indochina Classic: Vietnam, Cambodia & Laos, 14 Days from $2499</a></li>
+                    <li><a href="quintessential_srilanka.html">Sri Lanka: Quintessential Sri Lanka, 12 Days from $1599</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <nav class="footer_nav">
+
+            <ul>
+                <li><a href="terms_conditions.html">Booking Terms & Conditions</a></li>
+                <li><a href="travel_protection.html">Travel Protection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="request_brochure.html">Request brochure </a></li>
+            </ul>
+
+        </nav>
+        <p>©Far & High Adventures 2020</p>
+    </footer>
+    <script type="text/javascript" src = "/js/responsivenav.js"></script>
+    <script type="text/javascript" src = "/js/gallery.js" defer></script>
+    <script type="text/javascript" src="js/currency_converter.js" async defer></script>
+   
+</body>
+
+</html>

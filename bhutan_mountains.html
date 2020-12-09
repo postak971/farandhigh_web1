@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/itinerary.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Bhutan: Mountains, Monasteries & Wildlife</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav_container">
+            <nav class="topmost_nav_container">
+                <ul class="topmost_nav_left">
+                    <li><a href="request_brochure.html">Request Brochure</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news_blogs.html">News & Blogs</a></li>
+                </ul>
+
+                <ul class="topmost_nav_right">
+                    <li>1 866 123 4567</li>
+                    <li>Toll free from USA & Canada</li>
+                </ul>
+            </nav>
+            <nav class="main_nav_container">
+                <div class="main_nav_left">
+                    <img src="images/logo.png" alt="Far & High Adventures">
+                </div>
+                <div class="main_nav_right" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+
+                    <a href="deals.html">Deals</a>
+                    <div class="dropdown">
+                        <a class="dropbtn">Tours
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="tours.html">Culture</a>
+                            <a href="trekking_trips.html">Trekking</a>
+                            <a href="special_interest.html">Special Interest</a>
+                        </div>
+
+                    </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+                        onclick="myFunction()">&#9776;</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main_container">
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+            <!--Next and previous buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="/images/bhutan/tigers_nest_wide.jpg" style="width: 100%;" alt="Tiger's Nest Monastery"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="/images/bhutan/archery_wide.jpg" style="width: 100%;" alt=" Archery Pratice"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="/images/bhutan/farmers_market_wide.jpg" style="width: 100%;" alt=" Farmer's Market, Punakha"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="/images/bhutan/prayer_flags_wide.jpg" style="width: 100%;" alt="Prayer Flags In a Pass"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="/images/bhutan/trongsa_dzong_wide.jpg" style="width: 100%;" alt="Trongsa Dzong, Bhutan"
+                    class="smoothRadius">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="/images/bhutan/women_moving_wheels_wide.jpg" style="width: 100%;"
+                    alt="A Woman Rotating Prayer Wheel" class="smoothRadius">
+            </div>
+
+        </div>
+
+        <!--Image caption if any-->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!--Thumbnail images-->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="/images/bhutan/tigers_nest.jpg" style="width:100%;"
+                    onclick=" currentSlide(1)" alt="Tiger's Nest Monastery, Bhutan">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/bhutan/archery.jpg" style="width:100%;" onclick=" currentSlide(2)"
+                    alt="Archery Practice">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/bhutan/farmers_market.jpg" style="width:100%;"
+                    onclick=" currentSlide(3)" alt="Farmer's Market Punakha, Bhutan">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/bhutan/prayer_flags.jpg" style="width:100%;"
+                    onclick=" currentSlide(4)" alt="Prayer Flags">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/bhutan/trongsa_dzong.jpg" style="width:100%;"
+                    onclick=" currentSlide(5)" alt="Trognsa Dzong, Bhutan">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/bhutan/women_moving_wheels.jpg" style="width:100%;"
+                    onclick=" currentSlide(6)" alt="Bhutanese Women Rotating Prayer Wheels">
+            </div>
+        </div>
+        <h1>Bhutan: Mountains, Monasteries & Wildlife</h1>
+        <button class="button_cad">View Price in CA$</button>
+        <article class="itinerary_flex">
+            <section>
+                <h3>Trip Overview</h3>
+                <div class="overview_flex">
+                    <p>On this trip, we trek on the Nabji-Korphu trail in the Jigme Singye Wangchuck National Park, take
+                        safaris in
+                        Royal Manas National Park and survey the cultural heritage of Bhutan. Both Nabji
+                        KorphuTrail and the Manas National Park receive very few foreign travelers, and so these areas
+                        are mostly unexplored.
+                    </p>
+                    <div>
+                        <p><strong>Difficulty Level:</strong> 3, off-road travel, light trekking</p>
+                        <p><strong>Rating:</strong> Discovery</p>
+                        <p><strong>Highest Altitude:</strong> 11,230 ft at Pele La Pass</p>
+                        <p><strong>Trip starts at:</strong> Paro, Bhutan</p>
+                        <p><strong>Trip ends at:</strong> Paro, Bhutan</p>
+                        <p><strong>Accommodations:</strong> Hotels and guesthouses</p>
+                        <p><strong>Places visited:</strong> Thimphu Phobjikha Trongsa Jangbi Kubdra Nabji Korphu
+                            Nimshong Panbang Gelephu Punakha Paro</p>
+                    </div>
+                    <div>
+                        <h5>Trip Cost ( Based on minimum 3-participants)</h5>
+                       
+                        <p><strong>Sep, Oct, Nov, Mar, April, May & June:</strong></hp>
+                        <p class = "price">US$ <span class = "cost">3999</span> Per Person</p>
+                        <p>Private Room Supplement:</hp>
+                            <p class = "price">US$ <span class = "cost">650</span> Per Person</p> 
+                            <p>(Mandatory for a solo traveler)</p> 
+
+                        <p><strong>Jul, Aug, Dec, Jan & Feb:</strong></hp>
+                            <p class = "price">US$ <span class = "cost">3599</span> Per Person</p>
+                            <p>Private Room Supplement:</hp>
+                                <p class = "price">US$ <span class = "cost">550</span> Per Person</p> 
+                                <p>(Mandatory for a solo traveler)</p>                        
+                        <p>Airfares are not included.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Itineray</h3>
+                <h4>Day 01~Arrive in Paro, Bhutan</h4>
+
+                Flights to Paro (altitude 7,380 feet, or 2,250 meters) arrive from Kathmandu or Bangkok or Delhi. Please
+                allow at
+                least one night in those cities before and after your trip to ensure a safe connection with flights to
+                and from Bhutan.
+                Please arrange your international airfare to the gateway city; Far &amp; High will book the onward
+                flight for you. Your
+                Bhutan visa is part of the tour. We will email it to you in advance, as you’ll need it at check-in for
+                your flight to Bhutan
+                and again upon arrival at the Paro airport, where your passport will get its final visa seal. After
+                completing immigration and
+                customs formalities, your guide and driver will meet you outside the terminal and transfer you to a
+                restaurant in the town for
+                lunch.<br><br>After lunch, your guide will lead explorations of Paro. We begin from
+                the&nbsp;<strong>National Museum</strong>
+                &nbsp;housed at Ta Dzong, which served as a watchtower for the&nbsp;
+                <strong>Rinpung Dzong</strong>&nbsp;(a dzong is a fortress and a religious and social center).
+                The museum has a beautiful collection of books, murals, Bhutanese textiles, crafts, weapons,
+                olden utensils, stuffed animals, and a rich philatelic collection. From here, we descend to Rinpung
+                Dzong, which is the district headquarters and also the seat of the district's religious body.</p>
+                <p>Now, we proceed on an hour-long scenic drive to Thimphu with a stop for a short walk at the
+                    13th-century temple of&nbsp;<strong>
+                        Tamchog Lakhang which</strong>&nbsp;was built by the famous Tibetan iron-bridge builder
+                    Thangthong Gyalpo – architect,
+                    physician, teacher, and a saint! The temple is owned and maintained by his descendants.</p>
+                <p>In Thimphu, we’ll have time to settle in and take some rest before a walking tour of the tiny city.
+                    Thimphu is probably the only capital in the world without any traffic lights! We will leisurely take
+                    a
+                    stroll and visit the&nbsp;<strong>memorial Chorten</strong>&nbsp;(shrine)
+                    of the 3rd King of Bhutan Jigme Dorje Wangchuk, and whatever else time and our interest allow.</p>
+                <h4>Day 02~ Sightseeing and hiking in Thimphu</h4>
+                <p>After breakfast, we are off for sightseeing and hiking. We have a lot to see today! Depending on your
+                    interest,
+                    pace and available time, we may or may not visit all the sights listed below.</p>
+                <p>We first visit the <strong>weekend
+                        market</strong> of Thimphu, if we are here during the weekend. Farmers from the neighboring
+                    villages come to sell
+                    their fresh produce. We will also visit the <strong>archery</strong> field to see the national
+                    sports of Bhutan.<br>
+                    <br>Next, we can visit the National Institute Zorig Chusum that offers a six-year course on Bhutan's
+                    traditional arts
+                    and crafts, including painting, wood carving, embroidery, and statue making. Then we can head to
+                    the&nbsp;<strong>Simply
+                        Bhutan Museum</strong>&nbsp;resembles a typical Bhutanese village with demonstrations and
+                    performances on Bhutan's
+                    arts,&nbsp;culture, and lifestyle. Here, you can try Bhutanese costumes and&nbsp;pose for
+                    photographs!<br> <br>Next, we can visit the <strong>Takin Sanctuary</strong>. Takin&nbsp;– a kind of
+                    sheep by way of antelope — are the National animals of Bhutan and believed to exist only in Bhutan
+                    Himalaya. On the way back, stop at the<strong> Zilukha Nunnery</strong> in Drubthob Goemba, home to
+                    40-60 Buddhist nuns.<br> <br>We can visit the <strong>Gagyel Lhundrup Weaving Center</strong>, which
+                    produces traditional hand-woven textiles and has a selection of cloth and ready-made garments for
+                    sale. Here, you can see the local women working their looms.&nbsp;<br> <br>Next, visit the
+                    <strong>Changangkha Temple</strong>, one of the oldest in Thimphu, built in the 12th Century. The
+                    temple houses Chenrizig (Avolokitesawara), an 11-headed, thousand-armed manifestation as the central
+                    statue.&nbsp;<br> <br>In the afternoon, we can visit the World’s Largest Buddha Image —
+                    <strong>Buddha Dordenma</strong>, situated atop a hill overlooking the Thimphu Valley-the latest
+                    addition to Thimphu's attractions. This massive 169 feet tall image has a three-story base that
+                    houses a large chapel, while the body itself contains 125,000 smaller Buddha statues.&nbsp;<br>
+                    <br><strong>An option:</strong>&nbsp;Hiking enthusiasts keen to experience monastic lives away from
+                    the crowds of town can take a half-day hike to Tango Goemba monastery-with a trade-off with some
+                    sights listed above. Tango Goema Monastery is Bhutan's highest learning center for Buddhist studies.
+                    All Je Khenpo, the religious head of Bhutan, must complete a nine-year program here, including a
+                    three-year, three-month, three-day course in mediation at the nearby Cheri Goemba Monastery! With
+                    luck, the monks will be in recess, and we can join them for tea. (Note: on a group tour, there must
+                    be a unanimous decision to take this hike.)</p>
+                <p>Interested in the <strong>Buddhist astrology</strong>? On our way back, we can stop at&nbsp;Pangri
+                    Zampa Temple-an astrology school for the state clergy. More than a hundred monks study astrology in
+                    this center, and they&nbsp;welcome the public for astrology consultation if anyone is interested. A
+                    week-advance notice is requested for scheduling purpose, though.
+                <h4>Day 03~ A long day drive to Phobjikha Valley</h4>
+                <p>(85 miles, 6 hours).</p>
+                <p>After an early breakfast, we leave for Phobjhikha Valley.</p>
+                <p>As we leave Thimphu behind, the road gradually winds up through villages and pine forests
+                    to&nbsp;<strong>Dochula Pass&nbsp;
+
+                    </strong>(3100m/10168 ft.), marked by 108 Buddhist shrines, flickering with sacred prayers flags
+                    offered by the Buddhist devotees.
+                    On a clear day, the pass provides a superb panorama of the snow-capped mountains and the valleys.
+                </p>
+                <p>From the pass, the road drops slowly through the changing vegetation to the sub-tropical lowlands of
+                    the Punakha
+                    and Wangdue Valleys. In about 2 and a half hours, we will arrive in&nbsp;<strong>Punakha</strong>
+                    where we will stop for lunch.</p>
+                <p>We cross&nbsp;<strong>Lawala Pass</strong>&nbsp;and continue on the winding
+                    road down to the glacial valley of <strong>Phobjikha</strong> on the slopes of Black
+                    Mountains.&nbsp;Phobjikha
+                    is a glacial valley on the western slopes of the Black Mountains, bordering the Jigme Singye
+                    Wangchuck National
+                    t is one of the most important wildlife preserves of Bhutan as the large flock of black-necked
+                    cranes migrate here
+                    from Siberia, Mongolia and Tibet during the winter time. Usually, the first flock arrives in late
+                    October or early
+                    November.&nbsp;In addition to the cranes, there are also muntjacs (barking deer), wild boars,
+                    sambars, serows,
+                    Himalayan black bears, leopards and red foxes in the surrounding hills.</p>
+                <p>Today, we first visit the prominent <strong>Gangtey Gompa</strong> of the early 17th century. It is
+                    the only
+                    Nyingmapa monastery in the region. From here, we jump on the <strong>Gangtey Nature Trail</strong>
+                    for an about 2-hours easy hike through the pine forest and the valley. The walk ends over the
+                    meandering Chhu
+                    Nap ( Black River) near Khewang village where you are picked up by transport.&nbsp;</p>
+                <p>Upon arrival, check into your accommodation and the rest of the day is at leisure.</p>
+
+                <h4>Day 04~ Explore Phobjika Valley</h4>
+                <p>Phobjikha is a glacial valley on the western slopes of the Black Mountains, bordering the Jigme
+                    Singye Wangchuck
+                    National Park. It is one of the most important wildlife preserves of Bhutan as the large flock of
+                    black-necked cranes
+                    migrate here from Siberia, Mongolia and Tibet during the winter time. Usually, the first flock
+                    arrives in late October or early
+                    November.</p>
+                <p>In addition to the cranes, there are also muntjacs (barking deer), wild boars, sambars, serows,
+                    Himalayan black
+                    bears, leopards and red foxes in the surrounding hills.</p>
+                <p>After breakfast, one-hour or little longer drive brings us to
+                    the trailhead in Gogona village. Visit the local cheese factory and the beautiful temple. The cheese
+                    maker produces
+                    excellent fresh cheeses based on Swiss cheese making traditions. Maybe you want to purchase some
+                    cheese that you can
+                    eat along the way for energy The trail goes through rhododendron, magnolia, juniper and bamboo
+                    bushes, and if you are
+                    lucky, maybe you can spot some wildlife.</p>
+                <p>The trail back towards Phobjikha valley starts downwards through the small village and crosses the
+                    valley over a
+                    beautiful flower meadow. It then continues through mystifying forests up right before the Tshelela
+                    Pass where the
+                    landscape opens up.
+                    From the pass, you continue partly on the dirt road and party on beautiful forest paths downwards
+                    and into Phobjikha valley.</p>
+                <h4>Day 05~Travel to Trongsa</h4>
+                <p> (118 miles, 5 hours)</p>
+                <p>Early afternoon, we depart for Trongsa, 118 miles over four to five hours, as we backtrack to the
+                    main road and head to the east. The road gradually climbs the Black Mountain Range and
+                    crosses Pele-la pass (10,824 feet, or 3,300 meters) where the panoramic views include Mount
+                    Jhomolhari on the border with Tibet.</p>
+                <p> Below is Trongsa, the hometown of the present rulers of Bhutan. We stop briefly at the Chendebji
+                    chorten, a large white monument, which is said to have concealed the remnants of an evil spirit that
+                    was vanquished here.</p>
+                <p> Re-energized after lunch, visit the majestic Trongsa Dzong that must have captivated your attention
+                    already. The Dzong is the former capital and ancestral home of Bhutan's monarchy. An architectural
+                    wonder in itself, the fortress currently serves as the headquarter of Trongsa district and a
+                    monastery.</p>
+
+
+                <h4>Day 06~Travel back to Shigatse</h4>
+                <p>4980m/16,600 ft., 90km/56miles, 3-4 hrs.<br>
+
+                    Enjoy the spectacular views of Mount Everest and other majestic peaks of the Himalaya! If you didn't
+                    visit the base camp, you have a chance this morning, and usually, you have better and unobstructed
+                    views in the morning.
+                    <br>
+                    After breakfast, retrace drive to the main highway and continue on a long journey to Shigatse.<br>
+                    Overnight: Shigatse Gesar Hotel<br>
+                    Meals : Breakfast<br></p>
+                <h4>Day 07~Travel back to Lhasa.</h4>
+                <p>For the return trip back to Lhasa, we take the Northern Friendship Highway that follows the
+                    Yarlungdzangbo River.
+
+                    Check-in hotel and balance of the day is free for you to take rest or take a stroll in the town.<br>
+                    Overnight: Dekhang Hotel<br>
+                    Meals : Breakfast<br></p>
+                <h4>Day 08~Departure.</h4>
+                <p>
+                    After breakfast, get transferred to the airport in time for the flight to your next destination.
+                    Meals : Breakfast </p>
+
+                <h3>Trip Info</h3>
+                <h4>Trip Includes</h4>
+                <ul class="list_style_none">
+                    <li>Tibet entry permit.</li>
+                    <li>Accommodation on double occupancy basis.</li>
+                    <li>Daily Breakfast at your hotel</li>
+                    <li>All transfers and sightseeing by a private air-conditioned van or minibus.</li>
+                    <li>Sightseeing admission fees.</li>
+                    <li>English speaking local certified Guide.</li>
+                </ul>
+                <h4>Trip Does Not Include</h4>
+                <ul class="list_style_none">
+                    <li>International and internal airfare.</li>
+                    <li>Airport Taxes.</li>
+                    <li>Chinese visa fee.</li>
+                    <li>Lunch and dinner.</li>
+                    <li>Drinks, tipping, laundry, phone, internet, and other personal expenses.</li>
+                    <li>Travel & Health Insurance.</li>
+                    <li>All extra costs due to nature or unforeseen events.</li>
+                    <li> Excess baggage charges.</li>
+                </ul>
+                <h4>Passport and visa</h4>
+                <p>The remaining validity of your passport must be a minimum of six months beyond your return date. And
+                    please make sure you have two
+                    blank visa pages for China only.You will need to apply for a Chinese visa at your nearest Chinese
+                    embassy. We will help you with
+                    the form and necessary supporting documents. Please, initiate the application process in a minimum
+                    of three months before
+                    the travel date. We need a copy of your Chinese visa forty-five days before the planned arrival date
+                    in China. We will obtain
+                    the Tibetan Entry permit for you and ship it to your hotel in the gateway city (Chengdu or Beijing).
+                    You need to present this
+                    document when you check-in for the flight to Lhasa.
+                    Your Guide will be holding all other necessary permits required for this trip.</p>
+                <h4>Accommodation & meals</h4>
+                <p>In Lhasa, we will book a mid-range tourist standard hotel in Barkhor Area. Our choices of hotels are
+                    Dhekhang, Kyichu,
+                    or Gorkha Hotel, located in the old Tibetan quarter of Lhasa. These are locally managed mid-size
+                    properties with an
+                    adequate comfort level. There are a few four stars and 5-star hotels such as 4-Points By Sheraton,
+                    Shangrila Hotel,
+                    St. Regis, etc. and we can book them for you on an additional cost. In Shigatse also, we book a
+                    local three-star hotel.
+                    Accommodation in Rongbuk is rudimentary. The toilet is a Tibetan style squat with no running water.
+                    There is no shower
+                    here. Hotels in Tibet provide limited supplies of toiletries, and so, please bring your own set.
+                    They may not also have a
+                    hairdryer, iron, and ironing boards. If the preferred hotels listed in the program are not
+                    available, we will book the
+                    next best possible property in that price category.<br>
+                    Most hotels in Lhasa and Shigatse provide with WiFi, but some hotels may charge some nominal fee for
+                    using the WiFi.
+                    Food<br>
+
+                    The trip cost includes breakfast only. The hotels serve Chinese, Tibetan, Indian, Nepali, and
+                    western-style breakfasts.
+                    The trip does not include lunch and dinner and so budget $10-12 for a meal. You may want to bring
+                    some dry fruits, chocolates,
+                    energy bars, vitamin supplements, etc.
+                </p>
+
+                <h4>Roads and Transportation</h4>
+                <p>Now the road in Tibet is in good condition! They are all paved through the basecamp. However,
+                    vehicles have to stop at
+                    Rongbuk Monastery- the last point you can get by car. Depending on the final group size, we use a
+                    minivan or coaster bus all
+                    transfers and tours. Bring a protection mask for
+                    your nose to avoid inhaling dust! The driver may or may not speak English, but he knows the Tibetan
+                    roads and will be an
+                    experienced one.</p>
+                <h4>Tour Guide</h4>
+                <p> You will be accompanied by experienced and knowledgeable English speaking Tibetan Guide who you meet
+                    on arrival at Lhasa
+                    airport. Besides guiding you on tour, your guide will also be responsible for dealing with check
+                    posts, and local bureaucracies and
+                    complete necessary paperwork. Guide and driver are different persons.</p>
+                <h4>Altitude sickness and Health Issues</h4>
+                <p>There are no mandatory vaccinations required for traveling to China and Tibet unless you have visited
+                    any yellow fever affected
+                    areas in the last six months. However, you may consider protection against rabies Hep A, Typhoid,
+                    etc. Travelers with cardiac-pulmonary
+                    issues or any other medical conditions are recommended to consult their physician. The primary
+                    health consideration in Tibet is altitude-related
+                    illness or Acute Mountain Sickness (AMS). You may experience some mild symptoms initially, such as
+                    headache, lethargy, nausea, and sleeplessness,
+                    but these should lessen within a few days.
+
+                    Although the trip doesn't expect you to be athletic, you will be glad if you are fit. So, please,
+                    start some physical exercises like jogging,
+                    swimming, cycling, hiking, etc. about several weeks before the trip.</p>
+
+                <h4>Booking and cancellation</h4>
+                <p>We request a deposit of US$300 along with a completed trip application form and passport copies. If
+                    you need us to book the airfare to Lhasa,
+                    we will give you the quote.
+                    The final payment is due 90 days before the trip date. Balance payment on credit card attracts an
+                    additional 3.5% fee.</p>
+                <h5>Cancellation fees</h5>
+                <ul class="list_style_none">
+                    <li>Ninety days prior departure: Administrative fee US$ 150 per person.</li>
+                    <li>Sixty-Eighty-nine day's prior departure: US$ 250 or 25% of the land cost whichever is higher.
+                    </li>
+                    <li>Forty-five days to Fifty-nine days prior departure: US$ 450 or 50% of the land cost whichever is
+                        higher.</li>
+                    <li>Thirty days to Forty-four days before departure: US$ 600 or 75% of the land cost whichever is
+                        higher.</li>
+                    <li>Less than Thirty days: 100%,</li>
+                </ul>
+            </section>
+        </article>
+        <article class="similar_trips_container">
+            <h3>Similar Trips</h3>
+            <div class="similar_trips">
+                <ul>
+                    <li><a href="tibet_everest.html">Tibet: Everest Base Camp Adventure, 8 days from $999</a></li>
+                    <li><a href="mustang_nepal.html">Mustang, Nepal: A Kingdom In The Sky, 14 days from $249</a></li>
+                    <li><a href="bhutan_mountains.html">Bhutan: Mountains, Monasteries & Wildlife, 17 Days from
+                            $3499</a></li>
+                    <li><a href="india_tigers_tajmahal.html">India: Taj Mahal, Forts and Tigers, 12 Days from $1599</a>
+                    </li>
+                    <li><a href="mongolia_southgobi.html"> Mongolia: South Gobi and Naadam Festial, 10 Days from
+                            $2999</a></li>
+                    <li><a href="myanmar_discovery.html">Myanmar: Myanmar Discovery, 12 Days from $1499</a></li>
+                    <li><a href="indochina_classic.html">Indochina Classic: Vietnam, Cambodia & Laos, 14 Days from
+                            $2499</a></li>
+                    <li><a href="quintessential_srilanka.html">Sri Lanka: Quintessential Sri Lanka, 12 Days from
+                            $1599</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <nav class="footer_nav">
+
+            <ul>
+                <li><a href="terms_conditions.html">Booking Terms & Conditions</a></li>
+                <li><a href="travel_protection.html">Travel Protection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="request_brochure.html">Request brochure </a></li>
+            </ul>
+
+        </nav>
+        <p>©Far & High Adventures 2020</p>
+    </footer>
+    <script type="text/javascript" src="/js/responsivenav.js"></script>
+    <script type="text/javascript" src="/js/gallery.js" defer></script>
+    <script type="text/javascript" src="js/currency_converter.js" async defer></script>
+
+</body>
+
+</html>
