@@ -1,5 +1,8 @@
+var isCAD = false;
+
 var checkCad = document.querySelector(".button_cad");
-checkCad.addEventListener("click", usdToCad);
+checkCad.addEventListener("click", toggleCurrency);
+
 
 
 function usdToCad() {
@@ -14,7 +17,18 @@ function usdToCad() {
     for (var i = 0; i < numOfCost; i++) {
         costUSD[i] = cost[i].innerHTML;
         costCAD[i] = parseInt(costUSD[i], 10) * 1.29;
-        price[i].innerHTML = "CA$ " + Math.round(costCAD[i]) + " Per Person";       
+        price[i].innerHTML = "CA$ " + Math.round(costCAD[i]) + " Per Person"; 
+        checkCad.textContent = "View Price in US$";
+        isCAD = true;
     }   
   
+}
+
+function refresh() {
+    location.reload();
+    isCAD = false;
+}
+
+function toggleCurrency() {
+    isCAD ? refresh() : usdToCad();
 }
